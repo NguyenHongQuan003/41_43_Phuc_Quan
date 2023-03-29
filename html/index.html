@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slide.css">
+    <script src="../js/datajs.js"></script>
+    <script>
+        function setMasp(masp) {
+            localStorage.setItem("masp", masp)
+        }
+    </script>
+    <title>Mua Bán Ô Tô</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="../img/logo/logo.png" alt="">
+            </div>
+            <!-- <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div> -->
+            <div class="menu">
+                <nav>
+                    <ul class="main-menu">
+                        <li>
+                            <a href="../html/index.html">TRANG CHỦ</a>
+                        </li>
+                        <li>
+                            <a href="">DANH MỤC SẢN PHẨM</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#toyota">TOYOTA</a>
+                                </li>
+                                <li>
+                                    <a href="#honda">HONDA</a>
+                                </li>
+                                <li>
+                                    <a href="#mazda">MAZDA</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">PHỤ TÙNG</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#mamxe">MÂM XE</a>
+                                </li>
+                                <li>
+                                    <a href="#denxe">BÓNG ĐÈN</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../html/gioithieu.html">GIỚI THIỆU</a>
+                        </li>
+                        <li><a href="login_register.html">LOGIN</a></li>
+                        <li><a href="">GIỎ HÀNG</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btn-tim">
+                <input placeholder="Tìm Kiếm" type="text">
+                <button><i class='fas fa-search' style="color: black;"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrapper-slider">
+                <div class="slider">
+                    <div class="slides">
+                        <!-- radio buttons start -->
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="../img/slideshow/banner-mazda-8-2296796j31892.webp" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../img/slideshow/honda/Honda-City-the-he-5.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../img/slideshow/mazda/11daded2-b3dd-44f0-b1e7-281f820ccb06.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="../img/slideshow/toyota/homepage-banner-desktop-1600x680px.jpg" alt="">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="toyota" id="toyota">
+                <div class="headline">
+                    <h3><img src="../img/logo/logo-toyota.png" alt=""><br>TOYOTA</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="product-thumb">
+                                        <img src="../img/toyota/p1-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)"
+                                        class="product-name">Camry 2.0G</a>
+                                    <div class="product-price">1.070.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="product-thumb">
+                                        <img src="../img/toyota/p2-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)"
+                                        class="product-name">COROLLA ALTIS 1.8G</a>
+                                    <div class="product-price">719.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-thumb">
+                                        <img src="../img/toyota/p3-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-name">VIOS
+                                        1.5E MT</a>
+                                    <div class="product-price">489.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="product-thumb">
+                                        <img src="../img/toyota/p4-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)"
+                                        class="product-name">YARIS 1.5G CVT</a>
+                                    <div class="product-price">684.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="product-thumb">
+                                        <img src="../img/toyota/p5-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)"
+                                        class="product-name">Raize</a>
+                                    <div class="product-price">512.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="product-thumb">
+                                        <img src="../img/toyota/p6-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)"
+                                        class="product-name">COROLLA CROSS 1.8G</a>
+                                    <div class="product-price">755.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="product-thumb">
+                                        <img src="../img/toyota/p7-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)"
+                                        class="product-name">FORTUNER 2.4MT 4X2</a>
+                                    <div class="product-price">1.026.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-thumb">
+                                        <img src="../img/toyota/p8-1.png" onclick="setMasp(8)" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-name">LAND
+                                        CRUISER PRADO</a>
+                                    <div class="product-price">2.628.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="product-thumb">
+                                        <img src="../img/toyota/p9-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)"
+                                        class="product-name">HILUX 2.4L 4X2 AT</a>
+                                    <div class="product-price">852.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="honda" id="honda">
+                <div class="headline">
+                    <h3><img src="../img/logo/logo-honda.png" alt=""><br>HONDA</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="product-thumb">
+                                        <img src="../img/toyota/p1-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)"
+                                        class="product-name">Camry 2.0G</a>
+                                    <div class="product-price">1.070.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="product-thumb">
+                                        <img src="../img/toyota/p2-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)"
+                                        class="product-name">COROLLA ALTIS 1.8G</a>
+                                    <div class="product-price">719.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-thumb">
+                                        <img src="../img/toyota/p3-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-name">VIOS
+                                        1.5E MT</a>
+                                    <div class="product-price">489.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="product-thumb">
+                                        <img src="../img/toyota/p4-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)"
+                                        class="product-name">YARIS 1.5G CVT</a>
+                                    <div class="product-price">684.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="product-thumb">
+                                        <img src="../img/toyota/p5-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)"
+                                        class="product-name">Raize</a>
+                                    <div class="product-price">512.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="product-thumb">
+                                        <img src="../img/toyota/p6-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)"
+                                        class="product-name">COROLLA CROSS 1.8G</a>
+                                    <div class="product-price">755.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="product-thumb">
+                                        <img src="../img/toyota/p7-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)"
+                                        class="product-name">FORTUNER 2.4MT 4X2</a>
+                                    <div class="product-price">1.026.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-thumb">
+                                        <img src="../img/toyota/p8-1.png" onclick="setMasp(8)" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-name">LAND
+                                        CRUISER PRADO</a>
+                                    <div class="product-price">2.628.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="product-thumb">
+                                        <img src="../img/toyota/p9-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)"
+                                        class="product-name">HILUX 2.4L 4X2 AT</a>
+                                    <div class="product-price">852.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mazda" id="mazda">
+                <div class="headline">
+                    <h3><img src="../img/logo/logo-mazda.jpg" alt=""><br>MAZDA</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="product-thumb">
+                                        <img src="../img/toyota/p1-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(1)"
+                                        class="product-name">Camry 2.0G</a>
+                                    <div class="product-price">1.070.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="product-thumb">
+                                        <img src="../img/toyota/p2-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(2)"
+                                        class="product-name">COROLLA ALTIS 1.8G</a>
+                                    <div class="product-price">719.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-thumb">
+                                        <img src="../img/toyota/p3-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(3)" class="product-name">VIOS
+                                        1.5E MT</a>
+                                    <div class="product-price">489.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="product-thumb">
+                                        <img src="../img/toyota/p4-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(4)"
+                                        class="product-name">YARIS 1.5G CVT</a>
+                                    <div class="product-price">684.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="product-thumb">
+                                        <img src="../img/toyota/p5-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(5)"
+                                        class="product-name">Raize</a>
+                                    <div class="product-price">512.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="product-thumb">
+                                        <img src="../img/toyota/p6-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(6)"
+                                        class="product-name">COROLLA CROSS 1.8G</a>
+                                    <div class="product-price">755.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="product-thumb">
+                                        <img src="../img/toyota/p7-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(7)"
+                                        class="product-name">FORTUNER 2.4MT 4X2</a>
+                                    <div class="product-price">1.026.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-thumb">
+                                        <img src="../img/toyota/p8-1.png" onclick="setMasp(8)" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(8)" class="product-name">LAND
+                                        CRUISER PRADO</a>
+                                    <div class="product-price">2.628.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="product-thumb">
+                                        <img src="../img/toyota/p9-1.png" alt="">
+                                    </a>
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)" class="buy-now">Mua
+                                        ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="../html/chiTietSanPham.html" onclick="setMasp(9)"
+                                        class="product-name">HILUX 2.4L 4X2 AT</a>
+                                    <div class="product-price">852.000.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--------Phụ tùng ------->
+            <div class="phutung-mamxe" id="mamxe">
+                <div class="headline">
+                    <h3>MÂM XE</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/mamxe/ptm1.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Mâm đúc chính hãng KIA | L520KF12A77</a>
+                                    <div class="product-price">2.300.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/mamxe/ptm2.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Mâm đúc chính hãng KIA | 529101D201T157</a>
+                                    <div class="product-price">2.357.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/mamxe/ptm3.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Mâm đúc chính hãng KIA 15 inch | L520KTA0100</a>
+                                    <div class="product-price">1.950.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/mamxe/ptm4.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Mâm đúc chính hãng KIA | 5291007101I389</a>
+                                    <div class="product-price">1.850.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/mamxe/ptm5.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Logo mâm đúc chính hãng KIA | 0K2N337190</a>
+                                    <div class="product-price">250.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/mamxe/ptm6.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Mâm đúc chính hãng KIA | L520KK2T390</a>
+                                    <div class="product-price">1.713.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="phutung-denxe" id="denxe">
+                <div class="headline">
+                    <h3>BÓNG ĐÈN</h3>
+                </div>
+                <div>
+                    <ul class="products">
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/bongden/bd1.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Bóng đèn cản trước H8 chính hãng KIA |
+                                        1864935009L</a>
+                                    <div class="product-price">300.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/bongden/bd2.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Bóng đèn trần xe chính hãng KIA | 92879A4000</a>
+                                    <div class="product-price">850.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/bongden/bd3.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Bóng đèn trần dài chính hãng KIA | 1864510009N</a>
+                                    <div class="product-price">35.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/bongden/bd4.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Bóng đèn chân ghim loại trung chính hãng KIA |
+                                        1864316004N</a>
+                                    <div class="product-price">35.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/bongden/bd5.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Bóng đèn pha H1 chính hãng HYUNDAI KIA |
+                                        1864755009</a>
+                                    <div class="product-price">120.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-item">
+                                <div class="product-top">
+                                    <a href="" class="product-thumb">
+                                        <img src="../img/bongden/bd6.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua ngay</a>
+                                    <!-- mua ngay -->
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-name">Bóng đèn chân ghim 3w chính hãng HYUNDAI KIA |
+                                        1864305009N</a>
+                                    <div class="product-price">20.000 VND</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="col">
+                <h3>CTY Ô TÔ VIỆT NAM</h3>
+                <P>Chuyên mua bán ô tô, cung cấp các loại phụ tùng chính hãng</P>
+                <p>Cam kết uy tín, chất lượng 100%</p>
+                <img src="../img/logo/logo.png" alt="">
+            </div>
+            <div class="col">
+                <h3>ĐƯỜNG DÂY NÓNG</h3>
+                <P>0373644375</P>
+                <p>0363627080</p>
+            </div>
+            <div class="col">
+                <h3>DANH MỤC SẢN PHẨM</h3>
+                <p><a href="#toyota">TOYOTA</a></p>
+                <p><a href="#honda">HONDA</a></p>
+                <p><a href="#mazda">MAZDA</a></p>
+            </div>
+            <div class="col">
+                <h3>4</h3>
+            </div>
+        </footer>
+        <div class="footer-bot">
+            <P>©HQHP-CTY Ô TÔ CHÍNH HÃNG 2023</P>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 4000);
+    </script>
+</body>
+
+</html>
