@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0/css/all.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/script.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        nav {
+            background: #2ecc71;
+        }
+
+        #main-menu {
+            display: flex;
+        }
+
+        nav #main-menu li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+        }
+
+        #toggle{
+            display: none;
+            background-color: #c23616;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+        }
+
+        nav #main-menu li:hover a {
+            background-color: #c23616;
+            transition: all 0.3s;
+        }
+        nav #main-menu li:hover #sub-menu{
+            display: block;
+        }
+
+        #sub-menu{
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #main-menu {
+                flex-direction: column;
+                text-align: center;
+            }
+            #toggle{
+                display: block;
+            }
+        }
+    </style>
+    <!-- <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                alert("ok");
+            })
+        })
+    </script> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav>
+            <ul id="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Sản phẩm</a>
+                    <ul id="sub-menu">
+                        <li><a href="">Css2</a></li>
+                        <li><a href="">Css3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Dịch vụ</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

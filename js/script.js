@@ -1,6 +1,8 @@
-// $(document).ready(function() {
-//     $('#toggle').click();
-// })
+$(document).ready(function(){
+    $("#toggle").click(function(){
+        $("nav").slideToggle();
+    })
+})
 
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
