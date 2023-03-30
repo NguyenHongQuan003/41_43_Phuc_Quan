@@ -9,69 +9,85 @@
     height: auto;
     margin: 0 auto;
     color: #f5f6fa;
+    position: relative;
 }
 
 .header {
     display: flex;
-    margin: 0px auto;
-    height: 50px;
-    background-color: #9f0707;
-    justify-content: space-between;
-}
-
-.menu{
-    width: 100%;
+    height: 60px;
     background-color: #1abc9c;
-    position: absolute;
-    top: 50px;
-    text-align: center;
+    position: relative;
 }
 
-.main-menu{
+.logo {
+    padding: 5px 20px;
+}
+
+.menu {
+    line-height: 60px;
+}
+
+.main-menu {
     display: flex;
     list-style: none;
+
 }
 
-.main-menu li{
-    margin: 0 30px;
+.main-menu li {
+    margin: 0 20px;
+    padding: 0 10px;
 }
 
-.main-menu li a{
-    text-decoration: none;
+.main-menu li:hover .sub-menu {
+    display: block;
+}
+
+.main-menu li:hover {
+    background: #e84118;
+    transition: all .3s;
+}
+
+.main-menu li a {
     color: #fff;
+    text-decoration: none;
+    font-style: italic;
 }
 
-.sub-menu{
+.sub-menu li:hover {
+    background: #c23616;
+    transition: all .3s;
+}
+
+.sub-menu {
     list-style: none;
+    display: none;
 }
 
-/* 
-
-
-
-
-.header .btn-tim{
+.btn-tim {
     position: absolute;
+    line-height: 60px;
     right: 20px;
 }
 
-.header .btn-tim input {
+.btn-tim input {
     border: none;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-radius: 15px;
     height: 5px;
-    padding: 18px;
+    padding: 15px;
     outline: none;
-    width: 400px;
+    width: 300px;
 }
 
-.header .btn-tim button{
+.btn-tim button {
     border-radius: 50%;
     padding: 6px;
     cursor: pointer;
     align-items: center;
 }
+
+
 
 #toggle {
     display: none;
@@ -91,59 +107,9 @@
     margin: 2px;
 }
 
-.menu {
-    width: 100%;
-    height: 50px;
-    top: 51px;
-}
-
-.logo{
-    padding: 0px 20px;
-}
-
-.menu nav {
-    background: #273c75;
-}
-
-ul.main-menu {
-    display: flex;
-    list-style: none;
-}
-
-.main-menu li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 8px 20px;
-    font-style: italic;
-}
-
-.main-menu li:hover .sub-menu {
-    display: block;
-}
-
-.main-menu li:hover a {
-    background: #e84118;
-    transition: all .3s;
-}
-
-ul.sub-menu {
-    list-style: none;
-    display: none;
-}
-
-ul.sub-menu li a {
-    padding: 8px 40px;
-}
-
-ul.sub-menu li:hover a {
-    background: #c23616;
-    transition: all .3s;
-} */
-
 .container {
     max-width: 1089px;
-    margin: 50px auto;
+    margin: 10px auto;
     background-color: #f5f6fa;
 }
 
@@ -224,78 +190,52 @@ ul.products li img {
     height: auto;
 }
 
-footer{
+footer {
     display: flex;
+    width: 100%;
     height: auto;
-    background-color: #1abc9c;
-}
-footer .col{
-    width: 33%;
     background-color: #050202;
 }
 
-footer .col h3{
+footer .col {
+    margin: 0 auto;   
+}
+
+footer .col h3 {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-footer .col p{
+footer .col p {
     text-align: center;
 }
 
-.footer-bot{
-    height: 50px;
-    background-color: #bdc3c7;
-}
-.footer-bot{
-    text-align: center;
-    line-height: 50px;
-}
-/* 
-#footer {
-    height: auto;
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-}
-
-#footer .footer-top {
-    display: flex;
-    justify-content: space-between;
-}
-
-#footer .footer-top div {
-    margin: 5px 20px 10px;
-}
-
-#footer .footer-top a {
-    text-decoration: none;
+footer .col a{
     color: #fff;
+    text-decoration: none;
 }
 
-#footer .footer-top a:hover {
-    color: #0a9de1;
-}
-
-#footer .footer-top h4 {
-    margin: 10px 5px 30px 0px;
-}
-
-#footer .footer-top p {
-    width: 500px;
-    font-size: 18px;
-}
-
-#footer .footer-top a {
-    font-size: 18px;
+footer .col a:hover{
+    color: #3498db;
 }
 
 .footer-bot {
-    background-color: #b6b6b6;
     height: 50px;
-    text-align: center;
+    background-color: #bdc3c7;
 }
 
-.footer-bot h3 {
-    font-size: 18px;
-    padding: 15px;
+.footer-bot {
+    text-align: center;
+    line-height: 50px;
+}
+
+/* @media screen and(max-width: 1600px){
+    .menu{
+        flex-direction: column;
+    }
+    #toggle{
+        display: block;
+    }
 } */
+
