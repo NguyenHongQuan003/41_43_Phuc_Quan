@@ -93,7 +93,7 @@ body {
 .remember-forgot {
     font-size: .9em;
     font-weight: 500;
-    margin: -15px 0 15px;
+    margin: 0px 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -172,4 +172,9 @@ body {
 
 .dsAccount table th{
     padding: 5px 25px;
+}
+
+.txtdanger{
+    margin: 3px auto;
+    color: red;
 }

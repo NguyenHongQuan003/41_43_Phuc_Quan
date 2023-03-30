@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    $('#toggle').click();
-})
+// $(document).ready(function() {
+//     $('#toggle').click();
+// })
 
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
@@ -20,60 +20,59 @@ function kiemTraEmailDK() {
     let mail = $("#email_dk").val();
     let regexmail = /^([a-zA-Z0-9_])+\@(([a-zA-Z])+\.)com$/;
     if (!regexmail.test(mail)) {
-        alert("Email ví dụ: nhquan2622003@gmail.com");
-        $("#email_dk").focus();
+        $("#tbemail_dk").text("Ví dụ: nhquan2622003@gmail.com");
         return false;
     }
-    alert("Emai chính xác");
+    $("#tbemail_dk").text("*");
     return true;
 }
+$("#email_dk").blur(kiemTraEmailDK);
 
 function kiemTraUserName() {
     let hoten = $("#username_dk").val();
-    let regexHoten = /^[A-Z][a-zA-Z0-9]/;
+    let regexHoten =  /^[A-Za-z0-9_\.]{6,35}$/;
     if (!regexHoten.test(hoten)) {
-        alert("UserName bắt đầu là kí tự và viết in hoa");
-        $("#username_dk").focus();
+        $("#tbusername_dk").text("Bắt đầu là kí tự và tối thiểu 6 kí tự");
         return false;
     }
-    alert("UserName chính xác");
+    $("#tbusername_dk").text("*");
     return true;
 }
+$("#username_dk").blur(kiemTraUserName);
 
 function kiemTraSDT() {
     let sodt = $("#tel_dk").val();
     let regexSdt = /^0[345789]\d{8}/;
     if (!regexSdt.test(sodt)) {
-        alert("Số điện thoại gồm 10 số và bắt đầu bằng đầu số 03, 04, 05, 07, 08, 09");
-        $("#tel_dk").focus();
-        return false
+        $("#tbtel_dk").text("Gồm 10 số và có các đầu số 03, 04, 05, 07, 08, 09");
+        return false;
     }
-    alert("SĐT chính xác");
+    $("#tbtel_dk").text("*");
     return true;
 }
+$("#tel_dk").blur(kiemTraSDT);
 
 function kiemTraMK() {
     let mk = $("#pass_dk").val();
     let mauKT = /[a-zA-Z0-9]{6,}/;
     if (!mauKT.test(mk)) {
-        alert("Nhập ít nhất 6 kí tự, không kí tự đặc biệt");
-        $("#pass_dk").focus();
+        $("#tbpass_dk").text("Ít nhất 6 kí tự");
         return false;
     }
-    alert("MK chính xác");
+    $("#tbpass_dk").text("*");
     return true;
 }
+$("#pass_dk").blur(kiemTraMK);
 
 function kiemTraNLMK() {
     if ($("#verify-pass_dk").val() != $("#pass_dk").val()) {
-        alert("Mật khẩu không khớp, nhập lại");
-        $("#verify-pass_dk").focus();
+        $("#tbv-pass_dk").text("Mật khẩu không khớp, nhập lại");
         return false;
     }
-    alert("MK trùng khớp");
+    $("#tbv-pass_dk").text("*");
     return true;
 }
-
+$("#verify-pass_dk").blur(kiemTraNLMK);
 
 
 var i = 1;
@@ -98,25 +97,25 @@ $("#Save").click(function () {
 function kiemTraEmailDN(){
     let mail = $("#email_dn").val();
     var regexmail = /^([a-zA-Z0-9_])+\@(([a-zA-Z])+\.)com$/;
-    if (!regexmailDN.test(mailDN)) {
-        alert("Email ví dụ: nhquan2622003@gmail.com");
-        $("#email_dn").focus();
+    if (!regexmail.test(mail)) {
+        $("#tbemail_dn").text("Ví dụ: nhquan2622003@gmail.com");
         return false;
     }
-    alert("Emai chính xác");
+    $("#tbemail_dn").text("*");
     return true;
 }
+$("#email_dn").blur(kiemTraEmailDN);
 
 function kiemTraMatKhauDN(){
     let mauKT=/[a-zA-Z0-9]{6,}/;
     if(!mauKT.test($("#pass_dn").val())){
-        alert("Mật khẩu từ 6 ký tự, không kí tự đặc biệt");
-        $("#pass_dn").focus();
+        $("#tbpass_dn").text("Tối thiểu 6 ký tự");
         return false;
     }
-    alert("Mật khẩu chính xác");
+    $("#tbpass_dn").text("");
     return true;
 }
+$("#pass_dn").blur(kiemTraMatKhauDN);
 
 function kiemTra_DangNhap(){
     if(kiemTraEmailDN() == true && kiemTraMatKhauDN() == true)

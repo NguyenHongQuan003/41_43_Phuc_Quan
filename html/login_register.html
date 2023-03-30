@@ -22,10 +22,12 @@
                     <div class="input-box">
                         <input type="email" placeholder="Email" id="email_dn" required>
                         <i><ion-icon name="mail-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbemail_dn"></span>
                     </div>
                     <div class="input-box">
                         <input type="password" placeholder="Password" id="pass_dn" required>
                         <i><ion-icon name="lock-closed-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbpass_dn"></span>
                     </div>
                     <div class="remember-forgot">
                         <label for=""><input type="checkbox">Remember me</label>
@@ -44,22 +46,27 @@
                     <div class="input-box">
                         <input type="email" placeholder="Email" id="email_dk" required>
                         <i><ion-icon name="mail-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbemail_dk">*</span>
                     </div>
                     <div class="input-box">
                         <input type="text" size="25" maxlength="30" placeholder="Username" id="username_dk" required>
                         <i><ion-icon name="person-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbusername_dk">*</span>
                     </div>
                     <div class="input-box">
                         <input type="tel" size="10" maxlength="10" placeholder="Số điện thoại" id="tel_dk" required>
                         <i><ion-icon name="call-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbtel_dk">*</span>
                     </div>
                     <div class="input-box">
                         <input type="password" size="16" maxlength="16" id="pass_dk" placeholder="Password" required>
                         <i><ion-icon name="lock-closed-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbpass_dk">*</span>
                     </div>
                     <div class="input-box">
                         <input type="password" size="16" maxlength="16" id="verify-pass_dk" placeholder="Nhập lại Password" required>
                         <i><ion-icon name="lock-closed-outline"></ion-icon></i>
+                        <span class="txtdanger" id="tbv-pass_dk"></span>
                     </div>
                     <button type="submit" class="submit" id="Save">Đăng ký</button>
                     <div class="btn-register">
@@ -73,10 +80,10 @@
     </div>
     <div class="dsAccount" id="dangki">
         <table  id="danhSach">
-            <h4 class="e color mt-lg-4" style="text-align: center; color: #fff;">DANH SÁCH ĐĂNG KÝ TÀI KHOẢN THÀNH CÔNG</h4>
+            <h4 style="text-align: center; color: #fff;">DANH SÁCH ĐĂNG KÝ TÀI KHOẢN THÀNH CÔNG</h4>
                 <tr>
                     <th>STT</th>
-                    <th>Họ tên</th>
+                    <th>UserName</th>
                     <th>Email</th>
                     <th>Số điện thoại</th>
                     <th>Mật khẩu</th>
