@@ -15,96 +15,60 @@
 .header {
     display: flex;
     height: 60px;
-    background-color: #1abc9c;
-    position: relative;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.logo {
-    padding: 5px 20px;
-}
-
-.menu {
+.header .logo{
     line-height: 60px;
+}
+
+.header .logo img{
+    width: 60px;
+    margin-top: 20px;
+}
+.header .logo label{
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    background: #2ecc71;
 }
 
 .main-menu {
     display: flex;
-    list-style: none;
-
 }
 
-.main-menu li {
-    margin: 0 20px;
-    padding: 0 10px;
+nav .main-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
 }
-
-.main-menu li:hover .sub-menu {
+nav .main-menu li:hover a {
+    background-color: #c23616;
+    transition: all 0.3s;
+}
+nav .main-menu li:hover .sub-menu{
     display: block;
 }
 
-.main-menu li:hover {
-    background: #e84118;
-    transition: all .3s;
+.sub-menu{
+    display: none;
 }
 
-.main-menu li a {
+#toggle{
+    /* display: none; */
+    background-color: #c23616;
     color: #fff;
-    text-decoration: none;
-    font-style: italic;
-}
-
-.sub-menu li:hover {
-    background: #c23616;
-    transition: all .3s;
-}
-
-.sub-menu {
-    list-style: none;
-    display: none;
-}
-
-.btn-tim {
-    position: absolute;
-    line-height: 60px;
-    right: 20px;
-}
-
-.btn-tim input {
-    border: none;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-radius: 15px;
-    height: 5px;
-    padding: 15px;
-    outline: none;
-    width: 300px;
-}
-
-.btn-tim button {
-    border-radius: 50%;
-    padding: 6px;
-    cursor: pointer;
-    align-items: center;
-}
-
-
-
-#toggle {
-    display: none;
-    top: 100px;
-    width: 1089px;
-    position: fixed;
-    background: #353b48;
-    padding: 8px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-#toggle i {
-    border: 2px solid #fff;
-    padding: 3px;
-    margin: 2px;
+    text-align: right;
+    padding: 10px;
 }
 
 .container {
@@ -253,4 +217,13 @@ h3 {
     font-size: 16px;
     color: #ffffff40;
     padding: 30px 0 5px 0;
+}
+@media screen and (max-width: 768px) {
+    .main-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    #toggle{
+        display: block;
+    }
 }
