@@ -65,6 +65,7 @@
     cursor: pointer;
 }
 
+
 ul {
     list-style: none;
 }
@@ -117,16 +118,18 @@ nav .main-menu li:hover .sub-menu {
 }
 
 .headline {
-    text-align: center;
-    margin: 40px 0px;
+    margin: 40px 20px;
 }
 
 .headline h3 {
-    color: #050202;
+    color: #EA2027;
     padding: 10px 20px;
     border: 1px solid #050202;
     display: inline-block;
     font-weight: 600;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 10px -5px 10px #182e4a;
 }
 
 ul.products {
@@ -177,14 +180,11 @@ ul.products li .product-info {
 ul.products li .product-info .product-price {
     color: #ae0e0e;
     padding: 2px 0px;
-    font-size: 26px;
-    font-weight: 600;
 }
 
 ul.products li .product-info a {
     display: block;
     text-decoration: none;
-    font-weight: 600;
     color: #1601ff;
 }
 
@@ -210,6 +210,7 @@ h3 {
 
 .table .col {
     width: 25%;
+    padding: 2.5px;
 }
 
 .table .col h3 {
