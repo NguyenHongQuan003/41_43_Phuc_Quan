@@ -144,6 +144,12 @@ ul.products li {
     padding-right: 15px;
     box-sizing: border-box;
     margin-bottom: 30px;
+    box-shadow: 6px -6px 8px #130f40;
+    border: 1px solid #130f40;
+}
+
+ul.products li:hover{
+    margin-top: -10px;
 }
 
 ul.products li .product-top {
@@ -255,6 +261,78 @@ h3 {
     text-align: center;
     color: #ffffff78;
     padding: 30px 0 5px 0;
+}
+
+/* css trang chi tiet */
+.information .row{
+    display: flex;
+}
+
+.information .row .col{
+    width: 33%;
+    background-color: #130f40;
+    padding: 12px 3.5px;
+}
+
+.information .row .col .price{
+    margin: 5px 0;
+}
+
+.information .row .col .price h4{
+    color: #EA2027;
+}
+
+.information .row img{
+    max-width: 500px;
+    transition: transform .2s;
+}
+
+.information .row img:hover{
+    transform: scale(1.1);
+}
+
+.information .row h3{
+    color: #fff;
+}
+
+.information .row .col p{
+    color: #ffffff85;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.information .row .col b{
+    color: #EA2027;
+}
+
+.information .row .col button{
+    padding: 5px 15px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.information .row .col button:hover{
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.information .row .col .link{
+    margin: 5px 0;
+}
+
+.information .row .col .link a{
+    margin: 0 10px;
+    color: #fff;
+}
+
+.mota{
+    width: 95%;
+    border: 1px solid #1e90ff;
+    padding: 5px;
+    margin-top: 5px;
+    word-wrap: break-word;
+    height: 300px;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 768px) {
