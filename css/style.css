@@ -336,6 +336,21 @@ h3 {
     overflow-y: auto;
 }
 
+/* Css web giới thiệu thành viên */
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #050202;
+}
+.introduction tr,td,th{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    padding: 5px 10px;
+}
+
 @media screen and (max-width: 768px) {
     .main-menu {
         flex-direction: column;
