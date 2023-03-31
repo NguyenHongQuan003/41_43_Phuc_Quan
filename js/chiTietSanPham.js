@@ -11,7 +11,7 @@ $(document).ready(function(){
         let temp = "<img src='"+ sp.hinhanh +"' alt='Loi'>"
         $("#picture").html(temp)
     }
-    $(document).ready(function () {
+    $(document).ready(function() {
         dssp.forEach(sp => {
             napSP(temp)
         });
