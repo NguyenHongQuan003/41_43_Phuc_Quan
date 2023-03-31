@@ -99,10 +99,6 @@ nav .main-menu li:hover .sub-menu {
     display: none;
 }
 
-.sub-menu li {
-    padding-left: 10px;
-}
-
 #toggle {
     display: none;
     background-color: #c23616;
@@ -352,12 +348,43 @@ table{
 }
 
 @media screen and (max-width: 768px) {
+    .header .logo img{
+        width: 50px;
+    }
+    .header .logo label{
+        font-size: 20px;
+    }
+    .header .btn-tim input{
+        width: 100px;
+    }
+    .header .col:nth-child(3) button{
+        font-size: 12px;
+        padding: 1px;
+    }
+    #toggle {
+        display: block;
+    }
     .main-menu {
         flex-direction: column;
         text-align: center;
     }
-
-    #toggle {
-        display: block;
+    
+    .table{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
     }
+    .table .col{
+        margin: 0 auto;
+    }
+    .information .row{
+        flex-direction: column;
+    }
+    .information .row .col{
+        width: 100%;
+    }
+    .information .row img{
+        width: 100%;
+    }
+    
 }
