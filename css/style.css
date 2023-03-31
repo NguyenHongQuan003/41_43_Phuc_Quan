@@ -327,7 +327,8 @@ h3 {
 
 .mota{
     width: 95%;
-    border: 1px solid #1e90ff;
+    border: 1px solid #182e4a;
+    background-color: #182e4a;
     padding: 5px;
     margin-top: 5px;
     word-wrap: break-word;
