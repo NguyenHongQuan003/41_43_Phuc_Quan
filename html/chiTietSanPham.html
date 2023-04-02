@@ -10,6 +10,13 @@
     <script src="../js/chiTietSanPham.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Chi tiết</title>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("nav").slideToggle();
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -62,6 +69,9 @@
                                 <a href="../html/index.html#denxe">BÓNG ĐÈN</a>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="../html/tinTuc.html">TIN TỨC</a>
                     </li>
                     <li>
                         <a href="../html/gioithieu.html">GIỚI THIỆU</a>

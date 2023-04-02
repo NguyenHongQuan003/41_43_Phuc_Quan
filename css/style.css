@@ -347,6 +347,86 @@ table{
     padding: 5px 10px;
 }
 
+/* Css trang tin tức */
+.container-tin-tuc{
+    width: 100%;
+}
+
+.container-tin-tuc .sub-tin-tuc:hover{
+    border: 1px solid red;
+}
+
+.container-tin-tuc .sub-tin-tuc:hover a{
+    background-color: #EA2027;
+}
+
+.container-tin-tuc h3{
+    color: black;
+}
+
+.container-tin-tuc .date{
+    color: gray;
+}
+
+.container-tin-tuc .main-tin-tuc{
+    display: flex;
+    width: 100%;
+}
+
+.main-tin-tuc > .sub-tin-tuc{
+    width: 70%;
+    margin-right: 10px;
+}
+
+.main-tin-tuc > .sub-tin-tuc img{
+    width: 100%;
+}
+
+
+.main-tin-tuc .main-tin-tuc-left img{
+    width: 100%;
+}
+
+.main-tin-tuc .main-tin-tuc-right{
+    width: 30%;
+}
+
+.main-tin-tuc .main-tin-tuc-right img{
+    width: 100%;
+}
+
+.container-tin-tuc .list-tin-tuc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.list-tin-tuc .sub-tin-tuc{
+    flex-basis: 33%;
+}
+
+.list-tin-tuc .sub-tin-tuc img{
+    width: 359px;
+}
+
+.sub-tin-tuc{
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 45px;
+}
+
+.sub-tin-tuc a{
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 8px 10px;
+    position: absolute;
+    right: -3px;
+    bottom: -3px;
+}
+
+
 @media screen and (max-width: 768px) {
     .header .logo img{
         width: 50px;

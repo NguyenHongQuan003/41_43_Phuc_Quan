@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../fontawesome-free-6.4.0/css/all.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Chi tiết</title>
+    <script>
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("nav").slideToggle();
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -60,6 +68,9 @@
                                 <a href="../html/index.html#denxe">BÓNG ĐÈN</a>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="../html/tinTuc.html">TIN TỨC</a>
                     </li>
                     <li>
                         <a href="../html/gioithieu.html">GIỚI THIỆU</a>
@@ -133,7 +144,6 @@
         </div>
     </div>
     </div>
-    <script src="../js/script.js"></script>
 </body>
 
 </html>
