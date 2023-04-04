@@ -135,7 +135,7 @@ ul.products {
 }
 
 ul.products li {
-    flex-basis: 25%;
+    flex-basis: 32%;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -320,6 +320,21 @@ h3 {
     margin: 0 10px;
     color: #fff;
 }
+.information .row .col .link a:nth-child(1):hover i{
+    color: #D980FA;
+}
+
+.information .row .col .link a:nth-child(2):hover i{
+    color: #f39c12;
+}
+
+.information .row .col .link a:nth-child(3):hover i{
+    color: #1e90ff;
+}
+
+.information .row .col .link a:nth-child(4):hover i{
+    color: #be2a8d;
+}
 
 .mota{
     width: 95%;
@@ -330,6 +345,7 @@ h3 {
     word-wrap: break-word;
     height: 300px;
     overflow-y: auto;
+    text-align: left;
 }
 
 /* Css web giới thiệu thành viên */
@@ -465,6 +481,9 @@ table{
     }
     .information .row img{
         width: 100%;
+    }
+    .information .row img{
+        max-width: 95%;
     }
     
 }
